@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title data-commemoration=''>Wedding</title>
+		<base href='../../../'>
+					<!--[if IE]><script type="text/javascript">
+					    // Fix for IE ignoring relative base tags.
+					    (function() {
+					        var baseTag = document.getElementsByTagName('base')[0];
+					        baseTag.href = baseTag.href;
+					    })();
+					</script><![endif]-->
+		<meta charset="utf-8"> 
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<link rel='stylesheet' type='text/css' href='css/alwb.css'>
+		<link rel='stylesheet' type='text/css' href='js/lib/bootstrap/css/bootstrap.css'>
+		<script data-main="js/app" src="js/lib/require.js"></script>
+		<script type="text/javascript">
+				var alwbTooltips = {
+					l1: {
+						Audio: "Click to hear an audio recording.", 
+						Byzantine: "Click to view score in Byzantine notation.",
+						Western: "Click to view score in Western notation."
+						},
+					l2: {
+						Audio: "To hear an audio recording, click here.", 
+						Byzantine: "To view a Byzantine score, click here.",
+						Western: "To view a Western score, click here."
+						}
+				};
+		</script>
+    	</head>
+<body>
+<button class="left" onclick="hideAllEnglish()">Greek</button>
+<button class="center" onclick="showAll()">Bilingual</button>
+<button class="right" onclick="hideAllGreek()">English</button>
+	<table id='biTable'>		
+		<tbody>
+	<tr>
+	<td class='leftCell'><p class='designation'>ΑΚΟΛΟΥΘΙΑ ΓΑΜΟΥ </p></td>
+	<td class='RightCell'><p class='designation'>THE SACRAMENT OF MATRIMONY </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='mixed'><span class='italicsred'> </span> </p></td>
+	<td class='RightCell'><p class='mixed'><span class='italicsred'>Texts translated by + Fr. Evagoras Constantinides. Hymns from eMatins. </span> </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='designation'>ΑΚΟΛΟΥΘΙΑ ΕΠΙ ΜΝΗΣΤΡΟΙΣ ἤτοι ΤΟΥ ΑΡΡΑΒΩΝΟΣ </p></td>
+	<td class='RightCell'><p class='designation'>THE SERVICE OF BETROTHAL </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='actor'>Ιερευς </p></td>
+	<td class='RightCell'><p class='actor'>Priest </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Εὐλογητὸς ὁ Θεὸς ἡμῶν πάντοτε, νῦν καὶ ἀεὶ καὶ εἰς τοὺς αἰῶνας τῶν αἰώνων. </p></td>
+	<td class='RightCell'><p class='dialog'>Blessed is our God always, now and ever, and to the ages of ages. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'><span class='italics'>(Ἀμήν.) </span> </p></td>
+	<td class='RightCell'><p class='dialog'><span class='italics'>(Amen.) </span> </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Ἐν εἰρήνῃ τοῦ Κυρίου δεηθῶμεν. </p></td>
+	<td class='RightCell'><p class='dialog'>In peace let us pray to the Lord. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'><span class='italics'>(Κύριε, ἐλέησον.) </span> </p></td>
+	<td class='RightCell'><p class='dialog'><span class='italics'>(Lord, have mercy.) </span> </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Ἐν εἰρήνῃ τοῦ Κυρίου δεηθῶμεν. </p></td>
+	<td class='RightCell'><p class='dialog'>In peace let us pray to the Lord. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Ὑπὲρ τῆς ἄνωθεν εἰρήνης καὶ τῆς σωτηρίας τῶν ψυχῶν ἡμῶν, τοῦ Κυρίου δεηθῶμεν. </p></td>
+	<td class='RightCell'><p class='dialog'>For the peace of God and the salvation of our souls, let us pray to the Lord. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Ὑπὲρ τῆς εἰρήνης τοῦ σύμπαντος κόσμου, εὐσταθείας τῶν ἁγίων τοῦ Θεοῦ Ἐκκλησιῶν καὶ τῆς τῶν πάντων ἑνώσεως, τοῦ Κυρίου δεηθῶμεν. </p></td>
+	<td class='RightCell'><p class='dialog'>For peace in the whole world, for the stability of the holy churches of God, and for the unity of all, let us pray to the Lord. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Ὑπὲρ τοῦ ἁγίου Οἴκου τούτου καὶ τῶν μετὰ πίστεως, εὐλαβείας καὶ φόβου Θεοῦ εἰσιόντων ἐν αὐτῷ, τοῦ Κυρίου δεηθῶμεν. </p></td>
+	<td class='RightCell'><p class='dialog'>For this holy house and for those who enter it with faith, reverence, and the fear of God, let us pray to the Lord. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Ὑπὲρ τοῦ Ἀρχιεπισκόπου ἡμῶν Ἀλεξίου, τοῦ τιμίου πρεσβυτερίου, τῆς ἐν Χριστῷ διακονίας, παντὸς τοῦ κλήρου καὶ τοῦ λαοῦ, τοῦ Κυρίου δεηθῶμεν. </p></td>
+	<td class='RightCell'><p class='dialog'>For our our Archbishop Alexios, the honorable presbyters, the deacons in the service of Christ, and all the clergy and laity, let us pray to the Lord. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Ὑπὲρ τοῦ δούλου τοῦ Θεοῦ (τοῦδε), καὶ τῆς δούλης τοῦ Θεοῦ (τῆσδε) τῶν νῦν μνηστευομένων ἀλλήλοις, καὶ τῆς σωτηρίας αὐτῶν, τοῦ Κυρίου δεηθῶμεν. </p></td>
+	<td class='RightCell'><p class='dialog'>For the servant of God (Name) and the servant of God (Name) who now pledge themselves to one another, and for their salvation; let us pray to the Lord. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Ὑπὲρ τοῦ καταπεμφθῆναι αὐτοῖς ἀγάπην τελείαν, εἰρηνικήν, καὶ βοήθειαν, τοῦ Κυρίου δεηθῶμεν. </p></td>
+	<td class='RightCell'><p class='dialog'>That He send down upon them love perfect and peaceful, and give them His protection; let us pray to the Lord. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Ὑπὲρ τοῦ φυλαχθῆναι αὐτοὺς ἐν ὁμονοίᾳ καὶ βεβαίᾳ πίστει, τοῦ Κυρίου δεηθῶμεν. </p></td>
+	<td class='RightCell'><p class='dialog'>That He may keep them in oneness of mind, and in steadfastness of the Faith; let us pray to the Lord. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Ὑπὲρ τοῦ διαφυλαχθῆναι αὐτοὺς ἐν ἀμέμπτῳ βιοτῇ καὶ πολιτείᾳ, τοῦ Κυρίου δεηθῶμεν. </p></td>
+	<td class='RightCell'><p class='dialog'>That He may keep the course and manner of their life blameless; let us pray to the Lord.. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Ὅπως Κύριος ὁ Θεὸς ἡμῶν χαρίσηται αὐτοῖς τίμιον τὸν γάμον, καὶ τὴν κοίτην ἀμίαντον, τοῦ Κυρίου δεηθῶμεν. </p></td>
+	<td class='RightCell'><p class='dialog'>That the Lord God may grant unto them an honorable marriage and a bed undefiled; let us pray to the Lord. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Ὑπὲρ τοῦ ρυσθῆναι ἡμᾶς ἀπὸ πάσης θλίψεως, ὀργῆς, κινδύνου καὶ ἀνάγκης, τοῦ Κυρίου δεηθῶμεν. </p></td>
+	<td class='RightCell'><p class='dialog'>For our deliverance from all affliction, wrath, danger, and distress, let us pray to the Lord. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Ἀντιλαβοῦ, σῶσον, ἐλέησον καὶ διαφύλαξον ἡμᾶς ὁ Θεὸς τῇ σῇ χάριτι. </p></td>
+	<td class='RightCell'><p class='dialog'>Help us, save us, have mercy upon us and protect us, O God, by your grace. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Τῆς Παναγίας ἀχράντου, ὑπερευλογημένης, ἐνδόξου Δεσποίνης ἡμῶν Θεοτόκου καὶ ἀειπαρθένου Μαρίας μετὰ πάντων τῶν Ἁγίων μνημονεύσαντες, ἑαυτοὺς καὶ ἀλλήλους καὶ πᾶσαν τὴν ζωὴν ἡμῶν Χριστῷ τῷ Θεῷ παραθώμεθα. </p></td>
+	<td class='RightCell'><p class='dialog'>Remembering our most holy, pure, blessed, and glorious Lady, the Theotokos and ever-virgin Mary, with all the saints, let us commit ourselves and one another and our whole life to Christ our God. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'><span class='italics'>(Σοί, Κύριε.) </span> </p></td>
+	<td class='RightCell'><p class='dialog'><span class='italics'>(To You, O Lord.) </span> </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Ὅτι πρέπει σοι πᾶσα δόξα, τιμὴ καὶ προσκύνησις, τῷ Πατρὶ καὶ τῷ Υἱῷ καὶ τῷ Ἁγίῳ Πνεύματι, νῦν καὶ ἀεὶ καὶ εἰς τοὺς αἰῶνας τῶν αἰώνων. </p></td>
+	<td class='RightCell'><p class='dialog'>For to You belong all glory, honor, and worship, to the Father and the Son and the Holy Spirit, now and forever and to the ages of ages. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'><span class='italics'>(Ἀμήν.) </span> </p></td>
+	<td class='RightCell'><p class='dialog'><span class='italics'>(Amen.) </span> </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='actor'>Ιερευς </p></td>
+	<td class='RightCell'><p class='actor'>Priest </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Τοῦ Κυρίου δεηθῶμεν. </p></td>
+	<td class='RightCell'><p class='dialog'>Let us pray to the Lord. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'><span class='italics'>(Κύριε, ἐλέησον.) </span> </p></td>
+	<td class='RightCell'><p class='dialog'><span class='italics'>(Lord, have mercy.) </span> </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='zeromargin'> Ὁ Θεὸς ὁ αἰώνιος, ὁ τὰ διῃρημένα συναγαγὼν εἰς ἑνότητα καὶ σύνδεσμον διαθέσεως τιθεὶς ἄῤῥηκτον· ὁ εὐλογήσας Ἰσαὰκ καὶ Ῥεβέκκαν, καὶ κληρονόμους αὐτοὺς τῆς σῆς ἐπαγγελίας ἀναδείξας· αὐτὸς εὐλόγησον καὶ τοὺς δούλους σου τούτους, ὁδηγῶν αὐτοὺς ἐν παντὶ ἔργῳ ἀγαθῷ.  </p></td>
+	<td class='RightCell'><p class='zeromargin'>O eternal God, who brought things divided into unity and established an unbroken bond between them; who blessed Isaac and Rebecca and made them heirs of your promise: Bless these, your servants, guiding them to every good work. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='zeromargin'>Ὅτι ἐλεήμων καὶ φιλάνθρωπος Θεὸς ὑπάρχεις, καὶ Σοὶ τὴν δόξαν ἀναπέμπομεν, τῷ Πατρὶ καὶ τῷ Υἱῷ καὶ τῷ Ἁγίῳ Πνεύματι, νῦν καὶ ἀεὶ καὶ εἰς τοὺς αἰῶνας τῶν αἰώνων. </p></td>
+	<td class='RightCell'><p class='zeromargin'>For you are a merciful and loving God, and to you we ascribe glory, to the Father and to the Son and to the Holy Spirit, now and ever, and to the ages of ages. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'><span class='italics'>(Ἀμήν.) </span> </p></td>
+	<td class='RightCell'><p class='dialog'><span class='italics'>(Amen.) </span> </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Εἰρήνη πᾶσι. </p></td>
+	<td class='RightCell'><p class='dialog'>Peace be with all. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'><span class='italics'>(Καὶ τῷ πνεύματί σου.) </span> </p></td>
+	<td class='RightCell'><p class='dialog'><span class='italics'>(And with your spirit.) </span> </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Τὰς κεφαλὰς ὑμῶν τῷ Κυρίῳ κλίνομεν. </p></td>
+	<td class='RightCell'><p class='dialog'>Let us bow our heads to the Lord. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'><span class='italics'>(Σοί, Κύριε.) </span> </p></td>
+	<td class='RightCell'><p class='dialog'><span class='italics'>(To You, O Lord.) </span> </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='zeromargin'>Κύριε ὁ Θεὸς ἡμῶν, ὁ τὴν ἐξ ἐθνῶν προμνηστευσάμενος Ἐκκλησίαν παρθένον ἁγνήν, εὐλόγησον τὰ μνῆστρα ταῦτα, καὶ ἕνωσον, καὶ διαφύλαξον τοὺς δούλους σου τούτους ἐν εἰρήνῃ καὶ ὁμονοίᾳ. </p></td>
+	<td class='RightCell'><p class='zeromargin'>O Lord our God, who have espoused the Church as a pure virgin from among the nations, bless these rings and unite and preserve these your servants, in peace and concord. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='zeromargin'>Σοὶ γὰρ πρέπει πᾶσα δόξα, τιμὴ καὶ προσκύνησις, τῷ Πατρὶ καὶ τῷ Υἱῷ καὶ τῷ Ἁγίῳ Πνεύματι, νῦν καὶ ἀεὶ καὶ εἰς τοὺς αἰῶνας τῶν αἰώνων. </p></td>
+	<td class='RightCell'><p class='zeromargin'>For to you belong all glory, honor and worship, to the Father and to the Son and to the Holy Spirit, now and ever, and to the ages of ages. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'><span class='italics'>(Ἀμήν.) </span> </p></td>
+	<td class='RightCell'><p class='dialog'><span class='italics'>(Amen.) </span> </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Ἀῤῥαβωνίζεται ὁ δοῦλος τοῦ Θεοῦ (ὁ δεῖνα) τὴν δούλην τοῦ Θεοῦ (τὴν δεῖνα), εἰς τὸ ὄνομα τοῦ Πατρός, καὶ τοῦ Υἱοῦ, καὶ τοῦ Ἁγίου Πνεύματος. <span class='italics'>(Ἀμήν.) </span> <span class='red'>(ἐκ γʹ) </span> </p></td>
+	<td class='RightCell'><p class='dialog'>The servant of God (N) is betrothed to the servant of God (N), in the name of the Father and of the Son and of the Holy Spirit. <span class='italics'>(Amen.) </span> <span class='red'>(3) </span> </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Ἀῤῥαβωνίζεται ἡ δούλη τοῦ Θεοῦ (ἡ δεῖνα) τὸν δοῦλον τοῦ Θεοῦ (τὸν δεῖνα), εἰς τὸ ὄνομα τοῦ Πατρός, καὶ τοῦ Υἱοῦ, καὶ τοῦ Ἁγίου Πνεύματος. <span class='italics'>(Ἀμήν.) </span> <span class='red'>(ἐκ γʹ) </span> </p></td>
+	<td class='RightCell'><p class='dialog'>The servant of God (N) is betrothed to the servant of God (N), in the name of the Father and of the Son and of the Holy Spirit. <span class='italics'>(Amen.) </span> <span class='red'>(3) </span> </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Τοῦ Κυρίου δεηθῶμεν. </p></td>
+	<td class='RightCell'><p class='dialog'>Let us pray to the Lord. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'><span class='italics'>(Κύριε, ἐλέησον.) </span> </p></td>
+	<td class='RightCell'><p class='dialog'><span class='italics'>(Lord, have mercy.) </span> </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='zeromargin'>Κύριε ὁ Θεὸς ἡμῶν, ὁ τῷ παιδὶ τοῦ Πατριάρχου Ἀβραὰμ συμπορευθεὶς ἐν τῇ Μεσοποταμίᾳ, στελλομένῳ νυμφεύσασθαι τῷ κυρίῳ αὐτοῦ Ἰσαὰκ γυναῖκα, καὶ διὰ μεσιτείας ὑδρεύσεως ἀῤῥαβωνίσασθαι τὴν Ῥεβέκκαν ἀποκαλύψας· Αὐτός, εὐλόγησον τὸν ἀῤῥαβῶνα τῶν δούλων σου (τοῦδε) καὶ (τῆσδε) καὶ στήριξον τὸν παρ᾿ αὐτοῖς λαληθέντα λόγον. Βεβαίωσον αὐτοὺς τῇ παρὰ σοῦ ἁγίᾳ ἑνότητι· σὺ γὰρ ἀπ᾿ ἀρχῆς ἐδημιούργησας ἄρσεν καὶ θῆλυ, καὶ παρὰ σοῦ ἁρμόζεται ἀνδρὶ γυνὴ εἰς βοήθειαν καὶ διαδοχὴν τοῦ γένους τῶν ἀνθρώπων. Αὐτὸς οὖν, Κύριε ὁ Θεὸς ἡμῶν, ὁ ἐξαποστείλας τὴν ἀλήθειαν ἐπὶ τὴν κληρονομίαν σου, καὶ τὴν ἐπαγγελίαν σου ἐπὶ τοὺς δούλους σου, τοὺς πατέρας ἡμῶν, εἰς καθ᾿ ἑκάστην γενεὰν καὶ γενεὰν τοὺς ἐκλεκτούς σου, ἐπίβλεψον ἐπὶ τὸν δοῦλόν σου (τόνδε), καὶ τὴν δούλην σου (τήνδε), καὶ στήριξον τὸν ἀῤῥαβῶνα αὐτῶν ἐν πίστει καὶ ὁμονοίᾳ καὶ ἀληθείᾳ καὶ ἀγάπῃ· σὺ γάρ, Κύριε, ὑπέδειξας δίδοσθαι τὸν ἀῤῥαβῶνα καὶ στηρίζεσθαι ἐν παντί. Διὰ δακτυλιδίου ἐδόθη ἡ ἐξουσία τῷ Ἰωσὴφ ἐν Αἰγύπτῳ· διὰ δακτυλιδίου ἐδοξάσθη Δανιὴλ ἐν χώρᾳ Βαβυλῶνος· διὰ δακτυλιδίου ἐφανερώθη ἡ ἀλήθεια τῆς Θάμαρ· διὰ δακτυλιδίου ὁ Πατὴρ ἡμῶν ὁ οὐράνιος οἰκτίρμων γέγονεν ἐπὶ τὸν ἄσωτον υἱόν· "Δότε γάρ, φησι, δακτύλιον εἰς τὴν χεῖρα αὐτοῦ καὶ ἐνέγκαντες τὸν μόσχον τὸν σιτευτὸν θύσατε, καὶ φαγόντες εὐφρανθῶμεν". Αὕτη ἡ δεξιά σου, Κύριε, τὸν Μωϋσῆν ἐστρατοπέδευσεν ἐν Ἐρυθρᾷ θαλάσσῃ· διὰ γὰρ τοῦ λόγου σου τοῦ ἀληθινοῦ οἱ οὐρανοὶ ἐστερεώθησαν καὶ ἡ γῆ ἐθεμελιώθη· καὶ ἡ δεξιὰ τῶν δούλων σου εὐλογηθήσεται τῷ λόγῳ σου τῷ κραταιῷ καὶ τῷ βραχίονί σου τῷ ὑψηλῷ. Αὐτὸς οὖν καὶ νῦν, Δέσποτα, εὐλόγησον τὸ δακτυλοθέσιον τοῦτο εὐλογίαν οὐράνιον· καὶ Ἄγγελος Κυρίου προπορευέσθω ἔμπροσθεν αὐτῶν πάσας τὰς ἡμέρας τῆς ζωῆς αὐτῶν. </p></td>
+	<td class='RightCell'><p class='zeromargin'>O Lord our God, who accompanied the servant of the Patriarch Abraham to Mesopotamia, where he was sent to find a bride for his master Isaac, and through the watering at the well revealed to him that he should betroth Rebecca, bless the betrothal of your servants (N) and (N), and confirm the promise they have given to each other. Fortify them with your divine unity; for you from the beginning created male and female, and by your will is woman joined to man for help and for the continuance of the human race. Yes, Lord our God, who sent your truth upon your inheritance and your promise upon your servants our Fathers, your chosen ones from generation to generation, look down upon your servants (N) and (N), and strengthen their betrothal in faith and concord and truth and love; for it was you, Lord, who taught us to give our pledge through a ring and to remain faithful in everything. Through a ring the authority was given to Joseph in Egypt; through a ring Daniel was glorified in the land of Babylon; through a ring the true identity of Thamar was discovered; through a ring our heavenly Father showed mercy on the prodigal son; for he said: "Put a ring on his finger, and bring the fatted calf and kill it, so that we can eat and rejoice". Your right hand, O Lord, enabled Moses to cross the Red Sea; by your true word the heavens were made firm and the earth was established; and the right hand of your servants shall be blessed by your mighty word and your upraised arm. Do you now, O Master, bless this putting on of rings with a heavenly blessing; and may an Angel of the Lord go before them all the days of their lives. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='zeromargin'>Ὅτι σὺ εἶ ὁ εὐλογῶν καὶ ἁγιάζων τὰ σύμπαντα, καὶ σοὶ τὴν δόξαν ἀναπέμπομεν, τῷ Πατρὶ καὶ τῷ Υἱῷ καὶ τῷ Ἁγίῳ Πνεύματι, νῦν καὶ ἀεὶ καὶ εἰς τοὺς αἰῶνας τῶν αἰώνων. </p></td>
+	<td class='RightCell'><p class='zeromargin'>For you are he who blesses and sanctifies all things, and to you we ascribe glory, to the Father and to the Son and to the Holy Spirit, now and ever, and to the ages of ages. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'><span class='italics'>(Ἀμήν.) </span> </p></td>
+	<td class='RightCell'><p class='dialog'><span class='italics'>(Amen.) </span> </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='designation'>ΑΚΟΛΟΥΘΙΑ ΣΤΕΦΑΝΩΜΑΤΟΣ </p></td>
+	<td class='RightCell'><p class='designation'>SERVICE OF THE CROWNING </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='actor'>Ιερευς </p></td>
+	<td class='RightCell'><p class='actor'>Priest </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Μακάριοι πάντες οἱ φοβούμενοι τὸν Κύριον. Οἱ πορευόμενοι ἐν ταῖς ὁδοῖς αὐτοῦ. </p></td>
+	<td class='RightCell'><p class='dialog'>Blessed are all those who fear the Lord and walk in his ways. and walk in his ways. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'><span class='italics'>Δόξα σοι ὁ Θεὸς ἡμῶν, δόξα σοι. </span> </p></td>
+	<td class='RightCell'><p class='dialog'><span class='italics'>Glory to You, our God. Glory to You. </span> </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Τοὺς πόνους τῶν καρπῶν σου φάγεσαι. Μακάριος εἶ, καὶ καλῶς σοι ἔσται. </p></td>
+	<td class='RightCell'><p class='dialog'>For you shall enjoy the fruits of your labors;  blessed are you, and all shall be well with you. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'><span class='italics'>Δόξα σοι ὁ Θεὸς ἡμῶν, δόξα σοι. </span> </p></td>
+	<td class='RightCell'><p class='dialog'><span class='italics'>Glory to You, our God. Glory to You. </span> </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Ἡ γυνή σου ὡς ἄμπελος εὐθηνοῦσα ἐν τοῖς κλίτεσι τῆς οἰκίας σου. Οἱ υἱοί σου ὡς νεόφυτα ἐλαιῶν, κύκλῳ τῆς τραπέζης σου. </p></td>
+	<td class='RightCell'><p class='dialog'>Your wife shall be like a fruitful vine on the walls of your house; your children like newly-planted olive trees round about your table. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'><span class='italics'>Δόξα σοι ὁ Θεὸς ἡμῶν, δόξα σοι. </span> </p></td>
+	<td class='RightCell'><p class='dialog'><span class='italics'>Glory to You, our God. Glory to You. </span> </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Ἰδοὺ οὕτως εὐλογηθήσεται ἄνθρωπος ὁ φοβούμενος τὸν Κύριον. Εὐλογήσαι σε Κύριος ἐκ Σιών, καὶ ἴδοις τὰ ἀγαθὰ Ἱερουσαλὴμ πάσας τὰς ἡμέρας τῆς ζωῆς σου. Καὶ ἴδοις υἱοὺς τῶν υἱῶν σου. Εἰρήνη ἐπὶ τὸν Ἰσραήλ. </p></td>
+	<td class='RightCell'><p class='dialog'>See, thus shall the man be blessed who fears the Lord. May the Lord bless you from Zion, and may you enjoy the blessings of Jerusalem, all the days of your life. May you see your children's children. Peace be on Israel. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'><span class='italics'>Δόξα σοι ὁ Θεὸς ἡμῶν, δόξα σοι. </span> </p></td>
+	<td class='RightCell'><p class='dialog'><span class='italics'>Glory to You, our God. Glory to You. </span> </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='actor'>Ιερευς </p></td>
+	<td class='RightCell'><p class='actor'>Priest </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Εὐλογημένη ἡ Βασιλεία τοῦ Πατρὸς καὶ τοῦ Υἱοῦ καὶ τοῦ Ἁγίου Πνεύματος, νῦν καὶ ἀεί, καὶ εἰς τοὺς αἰῶνας τῶν αἰώνων. </p></td>
+	<td class='RightCell'><p class='dialog'>Blessed is the kingdom of the Father and the Son and the Holy Spirit, now and forever and to the ages of ages. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'><span class='italics'>(Ἀμήν.) </span> </p></td>
+	<td class='RightCell'><p class='dialog'><span class='italics'>(Amen.) </span> </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Ἐν εἰρήνῃ τοῦ Κυρίου δεηθῶμεν. </p></td>
+	<td class='RightCell'><p class='dialog'>In peace let us pray to the Lord. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'><span class='italics'>(Κύριε, ἐλέησον.) </span> </p></td>
+	<td class='RightCell'><p class='dialog'><span class='italics'>(Lord, have mercy.) </span> </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Ἐν εἰρήνῃ τοῦ Κυρίου δεηθῶμεν. </p></td>
+	<td class='RightCell'><p class='dialog'>In peace let us pray to the Lord. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Ὑπὲρ τῆς ἄνωθεν εἰρήνης καὶ τῆς σωτηρίας τῶν ψυχῶν ἡμῶν, τοῦ Κυρίου δεηθῶμεν. </p></td>
+	<td class='RightCell'><p class='dialog'>For the peace of God and the salvation of our souls, let us pray to the Lord. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Ὑπὲρ τῆς εἰρήνης τοῦ σύμπαντος κόσμου, εὐσταθείας τῶν ἁγίων τοῦ Θεοῦ Ἐκκλησιῶν καὶ τῆς τῶν πάντων ἑνώσεως, τοῦ Κυρίου δεηθῶμεν. </p></td>
+	<td class='RightCell'><p class='dialog'>For peace in the whole world, for the stability of the holy churches of God, and for the unity of all, let us pray to the Lord. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Ὑπὲρ τοῦ ἁγίου Οἴκου τούτου καὶ τῶν μετὰ πίστεως, εὐλαβείας καὶ φόβου Θεοῦ εἰσιόντων ἐν αὐτῷ, τοῦ Κυρίου δεηθῶμεν. </p></td>
+	<td class='RightCell'><p class='dialog'>For this holy house and for those who enter it with faith, reverence, and the fear of God, let us pray to the Lord. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Ὑπὲρ τοῦ Ἀρχιεπισκόπου ἡμῶν Ἀλεξίου, τοῦ τιμίου πρεσβυτερίου, τῆς ἐν Χριστῷ διακονίας, παντὸς τοῦ κλήρου καὶ τοῦ λαοῦ, τοῦ Κυρίου δεηθῶμεν. </p></td>
+	<td class='RightCell'><p class='dialog'>For our our Archbishop Alexios, the honorable presbyters, the deacons in the service of Christ, and all the clergy and laity, let us pray to the Lord. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Ὑπὲρ τῶν δούλων τοῦ Θεοῦ (τοῦ δε) καὶ (τῆς δε), τῶν νῦν συναπτομένων ἀλλήλοις εἰς γάμου κοινωνίαν, καὶ τῆς σωτηρίας αὐτῶν, τοῦ Κυρίου δεηθῶμεν. </p></td>
+	<td class='RightCell'><p class='dialog'>For the servants of God (Name) and (Name), who are now being joined to one another in the community of Marriage, and for their salvation; let us pray to the Lord. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Ὑπὲρ τοῦ εὐλογηθῆναι τὸν γάμον τοῦτον, ὡς τὸν ἐν Κανᾷ τῆς Γαλιλαίας, τοῦ Κυρίου δεηθῶμεν. </p></td>
+	<td class='RightCell'><p class='dialog'>That this marriage may be blessed as was that of Cana of Galilee; let us pray to the Lord. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Ὑπὲρ τοῦ παρασχεθῆναι αὐτοῖς σωφροσύνην, καὶ καρπὸν κοιλίας πρὸς τὸ συμφέρον, τοῦ Κυρίου δεηθῶμεν. </p></td>
+	<td class='RightCell'><p class='dialog'>That there may be given unto them soberness of life, and fruit of the womb as may be most expedient for them; let us pray to the Lord. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Ὑπὲρ τοῦ εὐφρανθῆναι αὐτοὺς ἐν ὁράσει υἱῶν καὶ θυγατέρων, τοῦ Κυρίου δεηθῶμεν. </p></td>
+	<td class='RightCell'><p class='dialog'>That they may rejoice in the beholding of sons and daughters; let us pray to the Lord. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Ὑπὲρ τοῦ δωρηθῆναι αὐτοῖς εὐτεκνίας ἀπόλαυσιν, καὶ ἀκατάγνωστον διαγωγήν, τοῦ Κυρίου δεηθῶμεν. </p></td>
+	<td class='RightCell'><p class='dialog'>That there may be granted unto them the happiness of abundant fertility, and a course of life blameless and unashamed; let us pray to the Lord. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Ὑπὲρ τοῦ δωρηθῆναι αὐτοῖς τε καὶ ἡμῖν πάντα τὰ πρὸς σωτηρίαν αἰτήματα, τοῦ Κυρίου δεηθῶμεν. </p></td>
+	<td class='RightCell'><p class='dialog'>That there may be granted unto them and unto us all prayers that tend unto salvation; let us pray to the Lord </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Ὑπὲρ τοῦ ῥυσθῆναι αὐτούς τε καὶ ἡμᾶς ἀπὸ πάσης θλίψεως, ὀργῆς, κινδύνου καὶ ἀνάγκης, τοῦ Κυρίου δεηθῶμεν. </p></td>
+	<td class='RightCell'><p class='dialog'>That both they and we may be delivered from tribulation, wrath, danger, and necessity; let us pray to the Lord. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Ἀντιλαβοῦ, σῶσον, ἐλέησον καὶ διαφύλαξον ἡμᾶς ὁ Θεὸς τῇ σῇ χάριτι. </p></td>
+	<td class='RightCell'><p class='dialog'>Help us, save us, have mercy upon us and protect us, O God, by your grace. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Τῆς Παναγίας ἀχράντου, ὑπερευλογημένης, ἐνδόξου Δεσποίνης ἡμῶν Θεοτόκου καὶ ἀειπαρθένου Μαρίας μετὰ πάντων τῶν Ἁγίων μνημονεύσαντες, ἑαυτοὺς καὶ ἀλλήλους καὶ πᾶσαν τὴν ζωὴν ἡμῶν Χριστῷ τῷ Θεῷ παραθώμεθα. </p></td>
+	<td class='RightCell'><p class='dialog'>Remembering our most holy, pure, blessed, and glorious Lady, the Theotokos and ever-virgin Mary, with all the saints, let us commit ourselves and one another and our whole life to Christ our God. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'><span class='italics'>(Σοί, Κύριε.) </span> </p></td>
+	<td class='RightCell'><p class='dialog'><span class='italics'>(To You, O Lord.) </span> </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Ὅτι πρέπει σοι πᾶσα δόξα, τιμὴ καὶ προσκύνησις, τῷ Πατρὶ καὶ τῷ Υἱῷ καὶ τῷ Ἁγίῳ Πνεύματι, νῦν καὶ ἀεὶ καὶ εἰς τοὺς αἰῶνας τῶν αἰώνων. </p></td>
+	<td class='RightCell'><p class='dialog'>For to You belong all glory, honor, and worship, to the Father and the Son and the Holy Spirit, now and forever and to the ages of ages. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'><span class='italics'>(Ἀμήν.) </span> </p></td>
+	<td class='RightCell'><p class='dialog'><span class='italics'>(Amen.) </span> </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='actor'>Ιερευς </p></td>
+	<td class='RightCell'><p class='actor'>Priest </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Τοῦ Κυρίου δεηθῶμεν. </p></td>
+	<td class='RightCell'><p class='dialog'>Let us pray to the Lord. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'><span class='italics'>(Κύριε, ἐλέησον.) </span> </p></td>
+	<td class='RightCell'><p class='dialog'><span class='italics'>(Lord, have mercy.) </span> </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='zeromargin'>Ὁ Θεὸς ὁ ἄχραντος, καὶ πάσης κτίσεως δημιουργός, ὁ τὴν πλευρὰν τοῦ προπάτορος Ἀδὰμ διὰ τὴν σὴν φιλανθρωπίαν εἰς γυναῖκα μεταμορφώσας, καὶ εὐλογήσας αὐτούς, καὶ εἰπών· "Αὐξάνεσθε καὶ πληθύνεσθε, καὶ κατακυριεύσατε τῆς γῆς", καὶ ἀμφοτέρους αὐτοὺς ἓν μέλος ἀναδείξας διὰ τῆς συζυγίας· ἕνεκεν γὰρ τούτου καταλείψει ἄνθρωπος τὸν πατέρα αὐτοῦ καὶ τὴν μητέρα, καὶ προσκολληθήσεται τῇ ἰδίᾳ γυναικί, καὶ ἔσονται οἱ δύο εἰς σάρκα μίαν· καί, οὓς ὁ Θεὸς συνέζευξεν, ἄνθρωπος μή χωριζέτω· ὁ τὸν θεράποντά σου Ἀβραὰμ εὐλογήσας, καὶ διανοίξας τὴν μήτραν Σάῤῥας, καὶ πατέρα πλήθους ἐθνῶν ποιήσας· ὁ τὸν Ἰσαὰκ τῇ Ῥεβέκκᾳ χαρισάμενος, καὶ τὸν τόκον αὐτῆς εὐλογήσας· ὁ τὸν Ἰακὼβ τῇ Ῥαχὴλ συνάψας, καὶ ἐξ αὐτοῦ τοὺς δώδεκα Πατριάρχας, ἀναδείξας· ὁ τὸν Ἰωσὴφ καὶ τὴν Ἀσυνὲθ συζεύξας, καρπὸν παιδοποιΐας αὐτοῖς τὸν Ἐφραίμ, καὶ τὸν Μανασσῆν χαρισάμενος· ὁ τὸν Ζαχαρίαν καὶ τὴν Ἐλισάβετ προσδεξάμενος, καὶ Πρόδρομον τὸν τόκον αὐτῶν ἀναδείξας· ὁ ἐκ τῆς ῥίζης Ἰεσσαὶ τὸ κατὰ σάρκα βλαστήσας τὴν ἀειπάρθενον, καὶ ἐξ αὐτῆς σαρκωθεὶς καὶ τεχθεὶς εἰς σωτηρίαν τοῦ γένους τῶν ἀνθρώπων· ὁ διὰ τὴν ἄφραστόν σου δωρεὰν καὶ πολλὴν ἀγαθότητα παραγενόμενος ἐν Κανᾷ τῆς Γαλιλαίας καὶ τὸν ἐκεῖσε γάμον εὐλογήσας, ἵνα φανερώσῃς ὅτι σὸν θέλημά ἐστιν ἡ ἔννομος συζυγία καὶ ἡ ἐξ αὐτῆς παιδοποιΐα. Αὐτός, Δέσποτα Πανάγιε, πρόσδεξαι τὴν δέησιν ἡμῶν τῶν ἱκετῶν σου, ὡς ἐκεῖσε καὶ ἐνταῦθα παραγενόμενος τῇ ἀοράτῳ σου ἐπιστασίᾳ· εὐλόγησον τὸν γάμον τοῦτον, καὶ παράσχου τοῖς δούλοις σου τούτοις (τῷ δεῖνι) καὶ (τῇ δεῖνι) ζωὴν εἰρηνικήν, μακροημέρευσιν, σωφροσύνην, τὴν εἰς ἀλλήλους ἀγάπην ἐν τῷ συνδέσμῳ τῆς εἰρήνης, σπέρμα μακρόβιον, τὴν ἐπὶ τέκνοις χάριν, τὸν ἀμαράντινον τῆς δόξης στέφανον. Ἀξίωσον αὐτοὺς ἰδεῖν τέκνα τέκνων· τὴν κοίτην αὐτῶν ἀνεπιβούλευτον διατήρησον· καὶ δὸς αὐτοῖς ἀπὸ τῆς δρόσου τοῦ οὐρανοῦ ἄνωθεν, καὶ ἀπὸ τῆς πιότητος τῆς γῆς· ἔμπλησον τοὺς οἴκους αὐτῶν σίτου, οἴνου καὶ ἐλέου καὶ πάσης ἀγαθωσύνης, ἵνα μεταδιδῶσι καὶ τοῖς χρείαν ἔχουσι, δωρούμενος ἅμα καὶ τοῖς συμπαροῦσι πάντα τὰ πρὸς σωτηρίαν αἰτήματα. </p></td>
+	<td class='RightCell'><p class='zeromargin'>O God most pure, the Maker of all creation, in your love for man you transformed the rib of our forefather Adam into woman, and blessed them and said: "Be fruitful and multiply, and have dominion over the earth"; and you made the two of them one member through union. For this reason shall a man leave his father and mother and shall cleave to his own wife, and the two shall be one flesh; and those whom God has yoked together, let no man separate. You blessed your servant Abraham by granting Sarah offspring, and made him the father of many nations; you gave Isaac to Rebecca and blessed their child; you joined Jacob to Rachel, and from him brought forth the twelve Patriarchs; you united Joseph and Asenath, and granted them Ephraim and Manasseh as offspring; you responded to Zacharias and Elizabeth, and made their son the Forerunner; from the root of Jesse you brought forth in the flesh the ever-Virgin Mary, from which you became incarnate and were born for the salvation of the human race; in your inexpressible grace and great goodness you traveled to Cana of Galilee and blessed the wedding there, in order to show that lawful union and the procreation of children from it are indeed your will: Do you, all-holy Master, accept the prayer of us your supplicants, and, as you were there with them, be here also with us through your invisible presence. Bless this marriage and grant to your servants (N) and (N) a tranquil life, long years, mature judgement, love for each other in the bond of peace, long-lasting posterity, grace on their children, a crown of everlasting glory. Make them worthy to see their children's children; preserve their marital bed inviolate; and bestow upon them the dew of heaven from above and all the riches of the earth; fill their home with wheat, wine and oil, and with every good thing, so that they may give to those in need; and grant to those here present all their requests that lead to salvation. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='zeromargin'>Ὅτι Θεὸς ἐλέους, οἰκτιρμῶν καὶ φιλανθρωπίας ὑπάρχεις, καὶ σοὶ τὴν δόξαν ἀναπέμπομεν, σὺν τῷ ἀνάρχῳ σου Πατρί, καὶ τῷ παναγίῳ καὶ ἀγαθῷ καὶ ζωοποιῷ σου Πνεύματι, νῦν καὶ ἀεὶ καὶ εἰς τοὺς αἰῶνας τῶν αἰώνων. </p></td>
+	<td class='RightCell'><p class='zeromargin'>For you are the God of mercy and compassion and love, and to you we ascribe glory, together with your beginningless Father, and your all-holy and good and life-giving Spirit, now and ever, and to the ages of ages. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'><span class='italics'>(Ἀμήν.) </span> </p></td>
+	<td class='RightCell'><p class='dialog'><span class='italics'>(Amen.) </span> </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='actor'>Ιερευς </p></td>
+	<td class='RightCell'><p class='actor'>Priest </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Τοῦ Κυρίου δεηθῶμεν. </p></td>
+	<td class='RightCell'><p class='dialog'>Let us pray to the Lord. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'><span class='italics'>(Κύριε, ἐλέησον.) </span> </p></td>
+	<td class='RightCell'><p class='dialog'><span class='italics'>(Lord, have mercy.) </span> </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='zeromargin'>Εὐλογητὸς εἶ, Κύριε ὁ Θεὸς ἡμῶν, ὁ τοῦ μυστικοῦ καὶ ἀχράντου γάμου ἱερουργὸς καὶ τοῦ σωματικοῦ νομοθέτης, ὁ τῆς ἀφθαρσίας φύλαξ, καὶ τῶν βιοτικῶν ἀγαθὸς οἰκονόμος· αὐτὸς καὶ νῦν, Δέσποτα, ὁ ἐν ἀρχῇ πλάσας τὸν ἄνθρωπον, καὶ θέμενος αὐτὸν ὡς βασιλέα τῆς κτίσεως, καὶ εἰπών· "Οὐ καλὸν εἶναι τὸν ἄνθρωπον μόνον ἐπὶ τῆς γῆς· ποιήσωμεν αὐτῷ βοηθὸν κατ᾿· αὐτόν"· καὶ λαβὼν μίαν τῶν πλευρῶν αὐτοῦ, ἔπλασας γυναῖκα, ἣν ἰδὼν Ἀδὰμ εἶπε· "Τοῦτο νῦν ὀστοῦν ἐκ τῶν ὀστῶν μου καὶ σάρξ ἐκ τῆς σαρκός μου· αὕτη κληθήσεται γυνή, ὅτι ἐκ τοῦ ἀνδρὸς αὐτῆς ἐλήφθη αὕτη· ἕνεκεν τούτου καταλείψει ἄνθρωπος τὸν πατέρα αὐτοῦ καὶ τὴν μητέρα, καὶ προσκολληθήσεται πρὸς τὴν γυναῖκα αὐτοῦ, καὶ ἔσονται οἱ δύο εἰς σάρκα μίαν"· καὶ "οὓς ὁ Θεὸς συνέζευξεν, ἄνθρωπος μὴ χωριζέτω"· Αὐτὸς καὶ νῦν, Δέσποτα Κύριε, ὁ Θεὸς ἡμῶν, κατάπεμψον τὴν χάριν σου τὴν ἐπουράνιον ἐπί τούς δούλους σου τούτους (τὸν δεῖνα) καὶ (τὴν δεῖνα)· καὶ δὸς τῇ παιδίσκῃ ταύτῃ ἐν πᾶσιν ὑποταγῆναι τῷ ἀνδρί, καὶ τὸν δοῦλόν σου τοῦτον εἶναι εἰς κεφαλὴν τῆς γυναικός, ὅπως βιώσωσι κατὰ τὸ θέλημά σου. Εὐλόγησον αὐτούς, Κύριε, ὁ Θεὸς ἡμῶν, ὡς εὐλόγησας τὸν Ἀβραὰμ καὶ τὴν Σάῤῥαν. Εὐλόγησον αὐτούς, Κύριε ὁ Θεὸς ἡμῶν, ὡς εὐλόγησας τὸν Ἰσαὰκ καὶ τὴν Ῥεβέκκαν. Εὐλόγησον αὐτοὺς Κύριε ὁ Θεὸς ἡμῶν, ὡς εὐλόγησας τὸν Ἰακὼβ καὶ πάντας τοὺς πατριάρχας. Εὐλόγησον αὐτούς, Κύριε ὁ Θεὸς ἡμῶν, ὡς εὐλόγησας τὸν Ἰωσὴφ καὶ τὴν Ἀσυνέθ. Εὐλόγησον αὐτούς, Κύριε ὁ Θεὸς ἡμῶν, ὡς εὐλόγησας Μωσέα καὶ Σεπφόραν. Εὐλόγησον αὐτούς, Κύριε ὁ Θεὸς ἡμῶν, ὡς εὐλόγησας Ἰωακεὶμ καὶ τὴν Ἄνναν. Εὐλόγησον αὐτούς, Κύριε ὁ Θεὸς ἡμῶν, ὡς εὐλόγησας Ζαχαρίαν καὶ τήν Ἐλισάβετ. Διαφύλαξον αὐτούς, Κύριε ὁ Θεὸς ἡμῶν, ὡς διεφύλαξας τὸν Νῶε ἐν τῇ Κιβωτῷ. Διαφύλαξον αὐτούς, Κύριε ὁ Θεὸς ἡμῶν, ὡς διεφύλαξας τὸν Ἰωνᾶν ἐν τῇ κοιλίᾳ τοῦ κήτους. Διαφύλαξον αὐτούς, Κύριε ὁ Θεὸς ἡμῶν, ὡς διεφύλαξας τοὺς ἁγίους τρεῖς Παῖδας ἐκ τοῦ πυρός, καταπέμψας αὐτοῖς δρόσον οὐρανόθεν· καὶ ἔλθοι ἐπ᾿ αὐτοὺς ἡ χαρὰ ἐκείνη, ἣν ἔσχεν ἡ μακαρία Ἑλένη, ὅτε εὗρε τὸν τίμιον Σταυρόν. Μνημόνευσον αὐτῶν, Κύριε ὁ Θεὸς ἡμῶν, ὡς ἐμνημόνευσας τοῦ Ἐνώχ, τοῦ Σήμ, τοῦ Ἠλία. Μνημόνευσον αὐτῶν, Κύριε ὁ Θεὸς ἡμῶν, ὡς ἐμνημόνευσας τῶν ἁγίων σου Τεσσαράκοντα Μαρτύρων, καταπέμψας αὐτοῖς οὐρανόθεν τοὺς στεφάνους. Μνημόνευσον, Κύριε ὁ Θεὸς ἡμῶν, καὶ τῶν ἀναθρεψάντων αὐτοὺς γονέων· ὅτι εὐχαὶ γονέων στηρίζουσι θεμέλια οἴκων. Μνημόνευσον, Κύριε ὁ Θεὸς ἡμῶν, τῶν δούλων σου τῶν Παρανύμφων, τῶν συνελθόντων εἰς τὴν χαρὰν ταύτην. Μνημόνευσον, Κύριε ὁ Θεὸς ἡμῶν, τοῦ δούλου σου (τοῦ δε) καὶ τῆς δούλης σου (τῆς δε), καὶ εὐλόγησον αὐτούς. Δὸς αὐτοῖς καρπὸν κοιλίας, καλλιτεκνίαν, ὁμόνοιαν ψυχῶν καὶ σωμάτων, Ὕψωσον αὐτοὺς ὡς τὰς κέδρους τοῦ Λιβάνου, ὡς ἄμπελον εὐκληματοῦσαν. Δώρησαι αὐτοῖς σπέρμα στάχυος, ἵνα, πᾶσαν αὐτάρκειαν ἔχοντες, περισσεύσωσιν εἰς πᾶν ἔργον ἀγαθὸν καὶ σοὶ εὐάρεστον, καὶ ἴδωσιν υἱοὺς τῶν υἱῶν αὐτῶν, ὡς νεόφυτα ἐλαιῶν κύκλῳ τῆς τραπέζης αὐτῶν· καὶ, εὐαρεστήσαντες ἐνώπιόν σου, λάμψωσιν ὡς φωστῆρες ἐν οὐρανῷ, ἐν σοὶ τῷ Κυρίῳ ἡμῶν· ᾧ πρέπει πᾶσα δόξα, κράτος, τιμή, καὶ προσκύνησις, νῦν καὶ ἀεὶ καὶ εἰς τοὺς αἰῶνας τῶν αἰώνων. </p></td>
+	<td class='RightCell'><p class='zeromargin'>Blessed are you, O Lord our God, celebrant of the mystical and pure marriage, law-giver of the marriage of the body, guardian of incorruption and righteous steward of the gifts of this life. In the beginning, O master, you created man and established him as the king of creation, and said: "It is not good that man should be alone on the earth; let us make a helper fit for him;" and taking one of his ribs you formed woman, and when Adam saw her he said: "This at last is bone of my bones and flesh of my flesh; she shall be called woman, because she was taken out of her man". For this reason shall a man leave his father and mother and shall cleave to his own wife, and the two shall be one flesh; and those whom God has yoked together, let no man separate. Do you, now, Lord and Master, our God, send down your heavenly grace upon your servants (N) and (N); and grant that this maiden may in all things submit to the man, and that this your servant may be the head of the woman, so that they may live according to your will. Bless them, O Lord our God, as you blessed Abraham and Sarah, Isaac and Rebecca, Jacob and all the Patriarchs, Joseph and Asenath, Moses and Zipporah, Joachim and Anna, Zacharias and Elizabeth. Guard them, O Lord our God, as you guarded Noah in the Ark, Jonah in the the belly of the whale, and the three holy youths from the fire, by sending down upon them dew from heaven; and let there come upon them that great joy which the blessed Helena felt when she found the precious Cross. Remember them, O Lord our God, as you remembered Enoch, Shem and Elias; as you remembered your holy Forty Martyrs, on whom you sent down crowns from heaven. Remember, O Lord our God, the parents who brought them up, for the blessings of parents make firm the foundations of homes. Remember, O Lord our God, your servants the attendants, who have come together to share in this rejoicing. Remember, O Lord our God, your servant (N) and your servant (N), and bless them. Grant them the fruit of the womb, fair children, oneness of souls and bodies. Exalt them as the cedars of Lebanon, as a luxuriant vine. Graciously give to them the fullness of blessings so that, being sufficient in everything, they may abound in every good work that is acceptable to you, and may see their children's children like newly-planted olive trees round about their table; and, having pleased you in every way, may shine as the stars of heaven, in you our Lord; to whom are due all glory, dominion, honor and worship, now and ever, and to the ages of ages. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'><span class='italics'>(Ἀμήν.) </span> </p></td>
+	<td class='RightCell'><p class='dialog'><span class='italics'>(Amen.) </span> </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='actor'>Ιερευς </p></td>
+	<td class='RightCell'><p class='actor'>Priest </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Τοῦ Κυρίου δεηθῶμεν. </p></td>
+	<td class='RightCell'><p class='dialog'>Let us pray to the Lord. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'><span class='italics'>(Κύριε, ἐλέησον.) </span> </p></td>
+	<td class='RightCell'><p class='dialog'><span class='italics'>(Lord, have mercy.) </span> </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='zeromargin'>Ὁ Θεὸς ὁ ἅγιος, ὁ πλάσας ἐκ χοὸς τὸν ἀνθρωπον, καὶ ἐκ τῆς πλευρᾶς αὐτοῦ ἀνοικοδομήσας γυναῖκα, καὶ συζεύξας αὐτῷ βοηθὸν κατ᾿ αὐτόν, διὰ τὸ οὕτως ἀρέσαι τῇ σῇ μεγαλειότητι, μὴ μόνον εἶναι τὸν ἄνθρωπον ἐπὶ τῆς γῆς· αὐτὸς καὶ νῦν, Δέσποτα, ἐξαπόστειλον τὴν χεῖρά σου ἐξ ἁγίου κατοικητηρίου σου, καὶ ἅρμοσον τὸν δοῦλον σου (τόν δε) καὶ τὴν δούλην σου (τήν δε), ὅτι παρὰ σοῦ ἁρμόζεται ἀνδρὶ γυνή. Σύζευξον αὐτοὺς ἐν ὁμοφροσύνῃ· στεφάνωσον αὐτοὺς εἰς σάρκα μίαν· χάρισαι αὐτοῖς καρπὸν κοιλίας, εὐτεκνίας ἀπόλαυσιν.  </p></td>
+	<td class='RightCell'><p class='zeromargin'>Holy God, who created man out of dust and from his rib fashioned woman, whom you joined to him as a helper fit for him, for it seemed good to your majesty that man should not be alone on the earth; do you now, O Master, stretch out your hand from your holy dwelling place, and join your servant (N) and your servant (N) (and joins their hands) for by you is woman joined to man. Yoke them in oneness of mind; crown them into one flesh; grant them the fruit of the womb, the joy or fair children. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='zeromargin'>Ὅτι σὸν τὸ κράτος καὶ σοῦ ἐστιν ἡ βασιλεία καὶ ἡ δύναμις καὶ ἡ δόξα, τοῦ Πατρὸς καὶ τοῦ Υἱοῦ καί τοῦ Ἁγίου Πνεύματος, νῦν καὶ ἀεὶ καὶ εἰς τοὺς αἰῶνας τῶν αἰώνων. </p></td>
+	<td class='RightCell'><p class='zeromargin'>For yours is the dominion, and yours is the Kingdom and the power and the glory, of the Father and of the Son and of the Holy Spirit, now and ever, and to the ages of ages. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'><span class='italics'>(Ἀμήν.) </span> </p></td>
+	<td class='RightCell'><p class='dialog'><span class='italics'>(Amen.) </span> </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='actor'>Ιερευς </p></td>
+	<td class='RightCell'><p class='actor'>Priest </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Στέφεται ὁ δοῦλος τοῦ Θεοῦ (ὁ δεῖνα), τὴν δούλην τοῦ Θεοῦ (τήν δε), εἰς τὸ ὄνομα τοῦ Πατρός, καὶ τοῦ Υἱοῦ, καὶ τοῦ Ἁγίου Πνεύματος. <span class='italics'>(Ἀμήν.) </span> <span class='red'>(ἐκ γʹ) </span> </p></td>
+	<td class='RightCell'><p class='dialog'>The servant of God (N) is crowned for the servant of God (N), in the name of the Father and of the Son and of the Holy Spirit. <span class='italics'>(Amen.) </span> <span class='red'>(3) </span> </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Στέφεται ἡ δούλη τοῦ Θεοῦ (ἡ δεῖνα), τὸν δοῦλον τοῦ Θεοῦ (τόν δε), εἰς τὸ ὄνομα τοῦ Πατρός, καὶ τοῦ Υἱοῦ, καὶ τοῦ Ἁγίου Πνεύματος. <span class='italics'>(Ἀμήν.) </span> <span class='red'>(ἐκ γʹ) </span> </p></td>
+	<td class='RightCell'><p class='dialog'>The servant of God (N) is crowed for the servant of God (N) in the name of the Father and of the Son and of the Holy Spirit. <span class='italics'>(Amen.) </span> <span class='red'>(3) </span> </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='actor'>Χορος </p></td>
+	<td class='RightCell'><p class='actor'>Choir </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'>
+	</td>
+	<td class='RightCell'>
+		<div class='media-group'><a class='media-icon tip-western2'  href='eu/wedding/w/crown.pdf' target='FrameScore'><span class='media-icon'>Score-W</span></a></div>
+	</td>
+	</tr>
+	<tr>
+	<td class='leftCell'>
+		<p class='hymn'><span class='key' data-key='eu.wedding_gr_GR_cog.ares.euWED.Key0217.text'>Κύριε ὁ Θεὸς ἡμῶν, δόξῃ καὶ τιμῇ στεφάνωσον αὐτούς.</span> </p>
+	</td>
+	<td class='RightCell'>
+		<p class='hymn'><span class='key' data-key='eu.wedding_en_US_ematins.ares.euWED.Key0217.text'>Lord our God, crown them with glory and honor.</span> </p>
+	</td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='designation'>ΤΑ ΑΝΑΓΝΩΣΜΑΤΑ </p></td>
+	<td class='RightCell'><p class='designation'>THE READINGS </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='actor'>Αναγνωστης </p></td>
+	<td class='RightCell'><p class='actor'>Reader </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='designation'>Προκείμενον. Ἦχος πλ. δʹ. </p></td>
+	<td class='RightCell'><p class='designation'>Prokeimenon. Mode pl. 4. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='reading'>Ἔθηκας ἐπὶ τὴν κεφαλὴν αὐτῶν στεφάνους ἐκ λίθων τιμίων. </p></td>
+	<td class='RightCell'><p class='reading'>You have placed upon their heads crowns of precious stones. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='actor'>Ιερευς </p></td>
+	<td class='RightCell'><p class='actor'>Priest </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Πρόσχωμεν. </p></td>
+	<td class='RightCell'><p class='dialog'>Let us be attentive. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='actor'>Αναγνωστης </p></td>
+	<td class='RightCell'><p class='actor'>Reader </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='reading'>Ζωὴν ᾐτήσαντό σε, καὶ ἔδωκας αὐτοῖς μακρότητα ἡμερῶν. </p></td>
+	<td class='RightCell'><p class='reading'>They asked life of you, and you gave them long years. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='actor'>Ιερευς </p></td>
+	<td class='RightCell'><p class='actor'>Priest </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Σοφία. </p></td>
+	<td class='RightCell'><p class='dialog'>Wisdom. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='actor'>Αναγνωστης </p></td>
+	<td class='RightCell'><p class='actor'>Reader </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='reading'> Πρὸς Ἐφεσίους Ἐπιστολῆς Παύλου τὸ ἀνάγνωσμα. </p></td>
+	<td class='RightCell'><p class='reading'>The reading is from Saint Paul's Letter to the Ephesians.  </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='actor'>Ιερευς </p></td>
+	<td class='RightCell'><p class='actor'>Priest </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Πρόσχωμεν. </p></td>
+	<td class='RightCell'><p class='dialog'>Let us be attentive. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='actor'>Αναγνωστης </p></td>
+	<td class='RightCell'><p class='actor'>Reader </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='chapverse'>(Κεφ. ε´ 20-33) </p></td>
+	<td class='RightCell'><p class='chapverse'>(5:20-33) </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='reading'>Ἀδελφοί, εὐχαριστεῖτε πάντοτε ὑπὲρ πάντων, ἐν ὀνόματι τοῦ Κυρίου ἡμῶν Ἰησοῦ Χριστοῦ τῷ Θεῷ καὶ Πατρί, ὑποτασσόμενοι ἀλλήλοις ἐν φόβῳ Χριστοῦ. Αἱ γυναῖκες τοῖς ἰδίοις ἀνδράσιν ὑποτάσσεσθε ὡς τῷ Κυρίῳ, ὅτι ὁ ἀνήρ ἐστι κεφαλὴ τῆς γυναικός, ὡς καὶ ὁ Χριστὸς κεφαλὴ τῆς Ἐκκλησίας, καὶ αὐτός ἐστι σωτὴρ τοῦ σώματος. Ἀλλ᾿ ὥσπερ ἡ Ἐκκλησία ὑποτάσσεται τῷ Χριστῷ, οὕτω καὶ αἱ γυναῖκες τοῖς ἰδίοις ἀνδράσιν ἐν παντί. Οἱ ἄνδρες ἀγαπᾶτε τὰς γυναῖκας ἑαυτῶν, καθὼς καὶ ὁ Χριστὸς ἠγάπησε τὴν Ἐκκλησίαν καὶ ἑαυτὸν παρέδωκεν ὑπὲρ αὐτῆς, ἵνα αὐτὴν ἁγιάσῃ, καθαρίσας τῷ λουτρῷ τοῦ ὕδατος ἐν ῥήματι, ἵνα παραστήσῃ αὐτὴν ἑαυτῷ ἔνδοξον τὴν Ἐκκλησίαν, μὴ ἔχουσαν σπίλον ἢ ῥυτίδα ἤ τι τῶν τοιούτων, ἀλλ᾿ ἵνᾳ ᾗ ἁγία καὶ ἄμωμος. Οὕτως ὀφείλουσιν οἱ ἄνδρες ἀγαπᾶν τὰς ἑαυτῶν γυναῖκας, ὡς τὰ ἑαυτῶν σώματα· ὁ ἀγαπῶν τὴν ἑαυτοῦ γυναῖκα ἑαυτὸν ἀγαπᾷ· οὐδεὶς γάρ ποτε τὴν ἑαυτοῦ σάρκα ἐμίσησεν, ἀλλ᾿ ἐκτρέφει καὶ θάλπει αὐτήν, καθὼς καὶ ὁ Κύριος τὴν Ἐκκλησίαν· ὅτι μέλη ἐσμὲν τοῦ σώματος αὐτοῦ, ἐκ τῆς σαρκὸς αὐτοῦ καὶ ἐκ τῶν ὀστέων αὐτοῦ· ἀντὶ τούτου καταλείψει ἄνθρωπος τὸν πατέρα αὐτοῦ καὶ τὴν μητέρα καὶ προσκολληθήσεται πρὸς τὴν γυναῖκα αὐτοῦ, καὶ ἔσονται οἱ δὺο εἰς σάρκα μίαν. Τό μυστήριον τοῦτο μέγα ἐστίν, ἐγὼ δὲ λέγω εἰς Χριστὸν καὶ εἰς τὴν Ἐκκλησίαν. Πλὴν καὶ ὑμεῖς οἱ καθ᾿ ἕνα, ἕκαστος τὴν ἑαυτοῦ γυναῖκα οὕτως ἀγαπάτω ὡς ἑαυτόν, ἡ δὲ γυνὴ ἵνα φοβῆται τὸν ἄνδρα. </p></td>
+	<td class='RightCell'><p class='reading'>Brethren, always give thanks for everything, in the name of our Lord Jesus Christ, to God the Father, and be subject to one another out of reverence for Christ. Wives, be subject to your husbands as to the Lord; for the man is the head of the woman, just as Christ also is the head of the Church, and he is, indeed, the savior of the body. But just as the Church is subject to Christ, so must women be to their husbands in everything. Husbands, love your wives, as Christ also loved the Church and gave himself up for her that he might sanctify and cleanse her with the washing of water by the word that he might present her to himself a glorious Church, not having spot or wrinkle or any such thing, but holy and without blemish. In the same way men are bound to love their wives as they love their own bodies. In loving his wife a man loves himself. For no one ever hated his own body but provides and cares for it as the Lord does the Church; for we are living parts of his body, of his flesh and of his bones; for this reason shall a man leave his father and mother and shall cleave to his wife, and the two shall become one flesh. This is a great mystery, but I speak in reference to Christ and Church. Yet each one of you individually must love his wife as his very self, and the wife must see to it that she treat her husband with respect. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='actor'>Ιερευς </p></td>
+	<td class='RightCell'><p class='actor'>Priest </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Εἰρήνη σοι τῷ ἀναγινώσκοντι. </p></td>
+	<td class='RightCell'><p class='dialog'>Peace be to you the reader. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='actor'>Χορος </p></td>
+	<td class='RightCell'><p class='actor'>Choir </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'>
+		<p class='hymn'><span class='key' data-key='prayers_gr_GR_cog.ares.Allilouia3.text'>Ἀλληλούϊα. Ἀλληλούϊα. Ἀλληλούϊα.</span> </p>
+	</td>
+	<td class='RightCell'>
+		<p class='hymn'><span class='key' data-key='prayers_en_US_ematins.ares.Allilouia3.text'>Alleluia. Alleluia. Alleluia.</span> </p>
+	</td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='actor'>Ιερευς </p></td>
+	<td class='RightCell'><p class='actor'>Priest </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Σοφία. Ὀρθοί. Ἀκούσωμεν τοῦ ἁγίου Εὐαγγελίου. Εἰρήνη πᾶσι. </p></td>
+	<td class='RightCell'><p class='dialog'>Wisdom. Arise. Let us hear the holy Gospel. Peace be with all. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'><span class='italics'>(Καὶ τῷ πνεύματί σου.) </span> </p></td>
+	<td class='RightCell'><p class='dialog'><span class='italics'>(And with your spirit.) </span> </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Ἐκ τοῦ κατὰ Ἰωάννην ἁγίου Εὐαγγελίου τὸ ἀνάγνωσμα. Πρόσχωμεν. </p></td>
+	<td class='RightCell'><p class='dialog'>The reading is from the holy Gospel according to John.  Let us be attentive. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'><span class='italics'>(Δόξα σοι, Κύριε, δόξα σοι.) </span> </p></td>
+	<td class='RightCell'><p class='dialog'><span class='italics'>(Glory to You, O Lord. Glory to You.) </span> </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='chapverse'>(Κεφ. β´ 1-11) </p></td>
+	<td class='RightCell'><p class='chapverse'>(2:1-11) </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='reading'>Τῷ καιρῷ ἐκείνῳ, γάμος ἐγένετο ἐν Κανᾷ τῆς Γαλιλαίας, καὶ ἦν ἡ μήτηρ τοῦ Ἰησοῦ ἐκεῖ· ἐκλήθη δὲ καὶ ὁ Ἰησοῦς καὶ οἱ μαθηταὶ αὐτοῦ εἰς τὸν γάμον. Καί ὑστερήσαντος οἴνου, λέγει ἡ μήτηρ τοῦ Ἰησοῦ πρὸς αὐτόν· Οἶνον οὐκ ἔχουσι. Λέγει αὐτῇ ὁ Ἰησοῦς· Τί ἐμοὶ καὶ σοί, γύναι; οὕπω ἥκει ἡ ὥρα μου. Λέγει ἡ μήτηρ αὐτοῦ τοῖς διακόνοις· Ὅ,τι ἂν λέγῃ ὑμῖν, ποιήσατε. Ἦσαν δὲ ἐκεῖ ὑδρίαι λίθιναι ἓξ κείμεναι κατὰ τὸν καθαρισμὸν τῶν Ἰουδαίων, χωροῦσαι ἀνὰ μετρητὰς δύο ἢ τρεῖς. Λέγει αὐτοῖς ὁ Ἰησοῦς· Γεμίσατε τὰς ὑδρίας ὕδατος. Καὶ ἐγέμισαν αὐτὰς ἕως ἄνω. Καὶ λέγει αὐτοῖς· Ἀντλήσατε νῦν καὶ φέρετε τῷ ἀρχιτρικλίνῳ. Καί ἤνεγκαν. Ὡς δὲ ἐγεύσατο ὁ ἀρχιτρίκλινος τὸ ὕδωρ οἶνον γεγενημένον (καὶ οὐκ ᾔδει πόθεν ἐστίν· οἱ δὲ διάκονοι ᾔδεισαν οἱ ἠντληκότες τὸ ὕδωρ) φωνεῖ τὸν νυμφίον ὁ ἀρχιτρίκλινος καὶ λέγει αὐτῷ· Πᾶς ἄνθρωπος πρῶτον τὸν καλὸν οἶνον τίθησι, καὶ ὅταν μεθυσθῶσι, τὸτε τὸν ἐλάσσω· σὺ δὲ τετήρηκας τὸν καλὸν οἶνον ἕως ἄρτι. Ταύτην ἐποίησε τὴν ἀρχὴν τῶν σημείων ὁ Ἰησοῦς ἐν Κανᾷ τῆς Γαλιλαίας καὶ ἐφανέρωσε τὴν δόξαν αὐτοῦ, καὶ ἐπίστευσαν εἰς αὐτὸν οἱ Μαθηταὶ αὐτοῦ. </p></td>
+	<td class='RightCell'><p class='reading'>At that time there was a wedding at Cana of Galilee, and the mother of Jesus was there; Jesus and his disciples were also invited to the wedding. When the wine gave out, Jesus's Mother said to him: "They have no wine." Jesus said to her: "Why should that concern you and me, lady? My hour has not yet come". His mother said to the servants: "Whatever he tells you to do, do it." There were six stone water jars standing near, of the kind used for Jewish rites of purification, holding twenty of thirty gallons each. Jesus said to them: "Fill the jars with water," and they filled them up to the brim. Then he said to them: "Now draw some out and take it to the steward of the feast"; and they did so. When the steward of the feast tasted the water, now turned into wine, (not knowing its source, even though the servants knew), he called the groom and said to him: "Everyone serves the good wine first, and when everybody has had plenty to drink, then that which is not so good; but you have kept the good wine till now!" This beginning of signs Jesus did in Cana of Galilee, and revealed his glory, and his disciples believed in him. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'><span class='italics'>(Δόξα σοι, Κύριε, δόξα σοι.) </span> </p></td>
+	<td class='RightCell'><p class='dialog'><span class='italics'>(Glory to You, O Lord. Glory to You.) </span> </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='actor'>Ιερευς </p></td>
+	<td class='RightCell'><p class='actor'>Priest </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Ἐλέησον ἡμᾶς ὁ Θεὸς κατὰ τὸ μέγα ἒλεός Σου, δεόμεθά Σου, ἐπάκουσον καὶ ἐλέησον. </p></td>
+	<td class='RightCell'><p class='dialog'>Have mercy on us, O God, according to your great mercy; we pray you, hear us and have mercy. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'><span class='italics'>(Κύριε, ἐλέησον. Κύριε, ἐλέησον. Κύριε, ἐλέησον.) </span> </p></td>
+	<td class='RightCell'><p class='dialog'><span class='italics'>(Lord, have mercy. Lord, have mercy. Lord, have mercy.) </span> </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Ἔτι δεόμεθα ὑπὲρ ἐλέους, ζωῆς, εἰρήνης, ὑγίειας καὶ σωτηρίας τῶν δούλων σου (τοῦ δεῖνος) καὶ (τῆς δεῖνος) καὶ ὑπὲρ τοῦ περιεστῶτος λαοῦ, τῶν ἀπεκδεχομένων τὸ παρὰ σοῦ πλούσιον ἔλεος. </p></td>
+	<td class='RightCell'><p class='dialog'>Again let us pray for the servants of God, (Name) and (Name), that they may have mercy, life, health, peace, safety, salvation, pardon and remission of their sins. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'><span class='italics'>(Κύριε, ἐλέησον. Κύριε, ἐλέησον. Κύριε, ἐλέησον.) </span> </p></td>
+	<td class='RightCell'><p class='dialog'><span class='italics'>(Lord, have mercy. Lord, have mercy. Lord, have mercy.) </span> </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Ὅτι ἐλεήμων καὶ φιλάνθρωπος Θεὸς ὑπάρχεις, καὶ Σοὶ τὴν δόξαν ἀναπέμπομεν, τῷ Πατρὶ καὶ τῷ Υἱῷ καὶ τῷ Ἁγίῳ Πνεύματι, νῦν καὶ ἀεὶ καὶ εἰς τοὺς αἰῶνας τῶν αἰώνων. </p></td>
+	<td class='RightCell'><p class='dialog'>For you are a merciful and loving God, and to you we give glory, to the Father and the Son and the Holy Spirit, now and forever and to the ages of ages. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'><span class='italics'>(Ἀμήν.) </span> </p></td>
+	<td class='RightCell'><p class='dialog'><span class='italics'>(Amen.) </span> </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='actor'>Ιερευς </p></td>
+	<td class='RightCell'><p class='actor'>Priest </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Τοῦ Κυρίου δεηθῶμεν. </p></td>
+	<td class='RightCell'><p class='dialog'>Let us pray to the Lord. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'><span class='italics'>(Κύριε, ἐλέησον.) </span> </p></td>
+	<td class='RightCell'><p class='dialog'><span class='italics'>(Lord, have mercy.) </span> </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='zeromargin'>Κύριε ὁ Θεὸς ἡμῶν, ὁ ἐν τῇ σωτηριώδει σου οἰκονομίᾳ καταξιώσας ἐν Κανᾷ τῆς Γαλιλαίας τίμιον ἀναδεῖξαι τὸν γάμον, διὰ τῆς σῆς παρουσίας, αὐτὸς καὶ νῦν τοὺς δούλους σου (τὸν δεῖνα) καὶ (τὴν δεῖνα), οὕς ηὐδόκησας συναφθῆναι ἀλλήλοις, ἐν εἰρήνῃ καὶ ὁμονοίᾳ διαφύλαξον. Τίμιον αὐτοῖς τὸν γάμον ἀνάδειξον· ἀμίαντον αὐτῶν τὴν κοίτην διατήρησον· ἀκηλίδωτον αὐτῶν τὴν συμβίωσιν διαμεῖναι εὐδόκησον· καὶ καταξίωσον αὐτοὺς ἐν γήρει πίονι καταντῆσαι, ἐν καθαρᾷ τῇ καρδίᾳ ἐργαζομένους τὰς ἐντολάς σου. </p></td>
+	<td class='RightCell'><p class='zeromargin'>O Lord our God, who in your saving dispensation declared marriage honorable by your presence in Cana of Galilee, keep in peace and concord your servants (N) and (N), whom you have been pleased to join together. Cause their marriage to be honorable; preserve their marital bed undefiled; grant that they may live together without spot of sin, and make them worthy to attain a ripe old age, fulfilling your commandments with a pure heart. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='zeromargin'>Σὺ γὰρ εἶ ὁ Θεὸς ἡμῶν, Θεὸς τοῦ ἐλεεῖν καὶ σῴζειν, καὶ σοὶ τὴν δόξαν ἀναπέμπομεν, σὺν τῷ ἀνάρχῳ σου Πατρί, καὶ τῷ παναγίῳ καὶ ἀγαθῷ καὶ ζωοποιῷ σου Πνεύματι, νῦν καὶ ἀεὶ καὶ εἰς τοὺς αἰῶνας τῶν αἰώνων. </p></td>
+	<td class='RightCell'><p class='zeromargin'>For you are our God, the God of mercy and salvation, and to you we ascribe glory, together with your beginningless Father and your all-holy and good and life-giving Spirit, now and ever, and to the ages of ages. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'><span class='italics'>(Ἀμήν.) </span> </p></td>
+	<td class='RightCell'><p class='dialog'><span class='italics'>(Amen.) </span> </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='actor'>Ιερευς </p></td>
+	<td class='RightCell'><p class='actor'>Priest </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Καὶ καταξίωσον ἡμᾶς, Δέσποτα, μετὰ παρρησίας, ἀκατακρίτως, τολμᾶν ἐπικαλεῖσθαι σὲ τὸν ἐπουράνιον Θεὸν Πατέρα, καὶ λέγειν· </p></td>
+	<td class='RightCell'><p class='dialog'>And make us worthy, Master, with confidence and without fear of condemnation, to dare call You, the heavenly God, FATHER, and to say: </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='actor'>Λαος </p></td>
+	<td class='RightCell'><p class='actor'>People </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='reading'>Πάτερ ἡμῶν ὁ ἐν τοῖς οὐρανοῖς, ἁγιασθήτω τὸ ὄνομά σου. Ἐλθέτω ἡ βασιλεία σου. Γενηθήτω τὸ θέλημά σου, ὡς ἐν οὐρανῷ καὶ ἐπὶ τῆς γῆς. Τὸν ἄρτον ἡμῶν τὸν ἐπιούσιον δὸς ἡμῖν σήμερον. Καὶ ἄφες ἡμῖν τὰ ὀφειλήματα ἡμῶν, ὡς καὶ ἡμεῖς ἀφίεμεν τοῖς ὀφειλέταις ἡμῶν. Καὶ μὴ εἰσενέγκῃς ἡμᾶς εἰς πειρασμόν, ἀλλὰ ρῦσαι ἡμᾶς ἀπὸ τοῦ πονηροῦ. </p></td>
+	<td class='RightCell'><p class='reading'>Our Father, who art in heaven, hallowed be Thy name. Thy kingdom come, Thy will be done, on earth as it is in heaven. Give us this day our daily bread; and forgive us our trespasses, as we forgive those who trespass against us. And lead us not into temptation, but deliver us from evil. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='actor'>Ιερευς </p></td>
+	<td class='RightCell'><p class='actor'>Priest </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Ὅτι Σοῦ ἐστιν ἡ βασιλεία καὶ ἡ δύναμις καὶ ἡ δόξα τοῦ Πατρὸς καὶ τοῦ Υἱοῦ καὶ τοῦ Ἁγίου Πνεύματος, νῦν καὶ ἀεὶ καὶ εἰς τοὺς αἰῶνας τῶν αἰώνων. </p></td>
+	<td class='RightCell'><p class='dialog'>For thine is the Kingdom and the power and the glory of the Father, and the Son and the Holy Spirit, now and forever and to the ages of ages. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'><span class='italics'>(Ἀμήν.) </span> </p></td>
+	<td class='RightCell'><p class='dialog'><span class='italics'>(Amen.) </span> </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='designation'> </p></td>
+	<td class='RightCell'><p class='designation'>THE BLESSING AND OFFERING OF THE COMMON CUP </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='actor'>Ιερευς </p></td>
+	<td class='RightCell'><p class='actor'>Priest </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Τοῦ Κυρίου δεηθῶμεν. </p></td>
+	<td class='RightCell'><p class='dialog'>Let us pray to the Lord. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'><span class='italics'>(Κύριε, ἐλέησον.) </span> </p></td>
+	<td class='RightCell'><p class='dialog'><span class='italics'>(Lord, have mercy.) </span> </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='zeromargin'>Ὁ Θεός, ὁ πάντα ποιήσας τῇ ἰσχύϊ σου, καὶ στερεώσας τὴν οἰκουμένην, καὶ κοσμήσας τὸν στέφανον πάντων τῶν πεποιημένων ὑπὸ σοῦ, καὶ τὸ ποτήριον τὸ κοινὸν τοῦτο παρεχόμενος τοῖς συναφθεῖσι πρὸς γάμου κοινωνίαν, εὐλόγησον εὐλογίᾳ πνευματικῇ. </p></td>
+	<td class='RightCell'><p class='zeromargin'>O God, who made all things by your power, and established the world, and adorned the crown of everything that you made: Bless with a spiritual blessing this common cup, which you offer to those joined in marriage. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='zeromargin'>Ὅτι ηὐλόγηταί Σου τὸ ὄνομα, καὶ δεδόξασταί Σου ἡ βασιλεία, τοῦ Πατρὸς καὶ τοῦ Υἱοῦ καὶ τοῦ Ἁγίου Πνεύματος, νῦν καὶ ἀεὶ καὶ εἰς τοὺς αἰῶνας τῶν αἰώνων. </p></td>
+	<td class='RightCell'><p class='zeromargin'>For your name is blessed, and your Kingdom is glorified, of the Father and of the Son and of the Holy Spirit, now and ever, and to the ages of ages. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'><span class='italics'>(Ἀμήν.) </span> </p></td>
+	<td class='RightCell'><p class='dialog'><span class='italics'>(Amen.) </span> </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='actor'>Χορος </p></td>
+	<td class='RightCell'><p class='actor'>Choir </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='mode'>Ἦχος αʹ. </p></td>
+	<td class='RightCell'><p class='mode'>Mode 1. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'>
+	</td>
+	<td class='RightCell'>
+		<div class='media-group'><a class='media-icon tip-western2'  href='eu/lichrysbasil/w/communionhymnwednesday.pdf' target='FrameScore'><span class='media-icon'>Score-W</span></a></div>
+	</td>
+	</tr>
+	<tr>
+	<td class='leftCell'>
+		<p class='hymn'><span class='key' data-key='le.d4_gr_GR_cog.ares.leLI.CommunionHymn.text'>Ποτήριον σωτηρίου λήψομαι, καὶ τὸ ὄνομα Κυρίου ἐπικαλέσομαι. Ἀλληλούϊα.</span> </p>
+	</td>
+	<td class='RightCell'>
+		<p class='hymn'><span class='key' data-key='le.d4_en_US_ematins.ares.leLI.CommunionHymn.text'>I will take up the cup of salvation, and call upon the name of the Lord. Alleluia.</span> </p>
+	</td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='mode'>Ἦχος πλ. αʹ. </p></td>
+	<td class='RightCell'><p class='mode'>Mode pl. 1. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'>
+	</td>
+	<td class='RightCell'>
+		<div class='media-group'><a class='media-icon tip-western2'  href='eu/wedding/w/isaiah.pdf' target='FrameScore'><span class='media-icon'>Score-W</span></a></div>
+	</td>
+	</tr>
+	<tr>
+	<td class='leftCell'>
+		<p class='hymn'><span class='key' data-key='he.h.m5_gr_GR_cog.ares.IsaiaChoreve.text'>Ἡσαΐα χόρευε, ἡ Παρθένος ἔσχεν ἐν γαστρί, καὶ ἔτεκεν υἱὸν τὸν Ἐμμανουήλ, Θεόν τε καὶ ἄνθρωπον, ἀνατολὴ ὄνομα αὐτῷ, ὂν μεγαλύνοντες, τὴν Παρθένον μακαρίζομεν. </span> </p>
+	</td>
+	<td class='RightCell'>
+		<p class='hymn'><span class='key' data-key='he.h.m5_en_US_ematins.ares.IsaiaChoreve.text'>O Isaiah, dance with joy, for the Virgin in the womb conceived, * and she has given birth to a Son, divine and human, Emmanuel, * to whom the name Orient belongs. * Him do we magnify, and the Virgin we beatify.</span> </p>
+	</td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='mode'>Ἦχος βαρύς. </p></td>
+	<td class='RightCell'><p class='mode'>Grave Mode. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'>
+	</td>
+	<td class='RightCell'>
+		<div class='media-group'><a class='media-icon tip-western2'  href='eu/wedding/w/martyrs.pdf' target='FrameScore'><span class='media-icon'>Score-W</span></a></div>
+	</td>
+	</tr>
+	<tr>
+	<td class='leftCell'>
+		<p class='hymn'><span class='key' data-key='oc.m7.d3_gr_GR_cog.ares.ocVE.Aposticha3.text'>Ἅγιοι Μάρτυρες, οἱ καλῶς ἀθλήσαντες, καὶ στεφανωθέντες, πρεσβεύσατε πρὸς Κύριον, ἐλεηθῆναι τὰς ψυχὰς ἡμῶν.</span> </p>
+	</td>
+	<td class='RightCell'>
+		<p class='hymn'><span class='key' data-key='oc.m7.d3_en_US_ematins.ares.ocVE.Aposticha3.text'>O holy Martyr Saints, who competed well and received the crowns of laurel, intercede with the Lord for us, that His mercy come upon our souls.</span> </p>
+	</td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='mode'>Ἦχος βαρύς. </p></td>
+	<td class='RightCell'><p class='mode'>Grave Mode. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'>
+		<p class='hymn'><span class='key' data-key='oc.m7.d2_gr_GR_cog.ares.ocVE.Aposticha3.text'>Δόξα σοι Χριστὲ ὁ Θεός, Ἀποστόλων καύχημα, Μαρτύρων ἀγαλλίαμα, ὧν τὸ κήρυγμα, Τριὰς ἡ ὁμοούσιος.</span> </p>
+	</td>
+	<td class='RightCell'>
+		<p class='hymn'><span class='key' data-key='oc.m7.d2_en_US_ematins.ares.ocVE.Aposticha3.text'>Glory be to You, Christ our God, the Apostles' pride and joy, exultation of the Martyr Saints, whose proclamation was the consubstantial Trinity.</span> </p>
+	</td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='actor'>Ιερευς </p></td>
+	<td class='RightCell'><p class='actor'>Priest </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Μεγαλύνθητι, Νυμφίε, ὡς ὁ Ἀβραὰμ, καὶ εὐλογήθητι ὡς ὁ Ἰσαάκ, καὶ πληθύνθητι ὡς ὁ Ἰακώβ, πορευόμενος ἐν εἰρήνῃ καὶ ἐργαζόμενος ἐν δικαιοσύνῃ τάς ἐντολὰς τοῦ Θεοῦ. </p></td>
+	<td class='RightCell'><p class='dialog'>Be magnified, O bridegroom, like Abraham, and be blessed like Isaac, and multiply like Jacob, walking in peace and fulfilling in righteousness the commandments of God. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Καὶ σύ, Νύμφη, μεγαλύνθητι ὡς ἡ Σάῤῥα, καὶ εὐφράνθητι ὡς ἡ Ῥεβέκκα, καὶ πληθύνθητι ὡς ἡ Ῥαχήλ, εὐφραινομένη τῷ ἰδίῳ ἀνδρί, φυλάττουσα τοὺς ὅρους τοῦ νόμου, ὅτι οὕτως ηὐδόκησεν ὁ Θεός. </p></td>
+	<td class='RightCell'><p class='dialog'>And you, O bride, be glorified like Sarah, and be glad like Rebecca, and multiply like Rachel, rejoicing in your own husband, and observing the requirements of the law, for so God is well pleased. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='designation'> </p></td>
+	<td class='RightCell'><p class='designation'>THE TAKING UP OF THE CROWNS </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='actor'>Ιερευς </p></td>
+	<td class='RightCell'><p class='actor'>Priest </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Τοῦ Κυρίου δεηθῶμεν. </p></td>
+	<td class='RightCell'><p class='dialog'>Let us pray to the Lord. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'><span class='italics'>(Κύριε, ἐλέησον.) </span> </p></td>
+	<td class='RightCell'><p class='dialog'><span class='italics'>(Lord, have mercy.) </span> </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Ὁ Θεὸς, ὁ Θεὸς ἡμῶν, ὁ παραγενόμενος ἐν Κανᾷ τῆς Γαλιλαίας, καὶ τὸν ἐκεῖσε γάμον εὐλογήσας, εὐλόγησον καὶ τοὺς δούλους σου τούτους, τοὺς τῇ σῇ προνοίᾳ πρὸς γάμου κοινωνίαν συναφθέντας. Εὐλόγησον αὐτῶν εἰσόδους καὶ ἐξόδους· πλήθυνον ἐν ἀγαθοῖς τὴν ζωὴν αὐτῶν· ἀνάλαβε τοὺς στεφάνους αὐτῶν ἐν τῇ Βασιλείᾳ σου, ἀσπίλους καὶ ἀμώμους καὶ ἀνεπιβουλεύτους διατηρῶν εἰς τοὺς αἰῶνας τῶν αἰώνων. </p></td>
+	<td class='RightCell'><p class='dialog'>O God, our God, who went to Cana of Galilee and blessed the wedding there, bless also these your servants, who by your providence have been joined together in the community of matrimony; bless their goings out and their comings in; grant them a life full of good things; take up their crowns into your kingdom, and preserve them undefiled, blameless and beyond reproach, to the ages of ages. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'><span class='italics'>(Ἀμήν.) </span> </p></td>
+	<td class='RightCell'><p class='dialog'><span class='italics'>(Amen.) </span> </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='actor'>Ιερευς </p></td>
+	<td class='RightCell'><p class='actor'>Priest </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Εἰρήνη πᾶσι. </p></td>
+	<td class='RightCell'><p class='dialog'>Peace be with all. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'><span class='italics'>(Καὶ τῷ πνεύματί σου.) </span> </p></td>
+	<td class='RightCell'><p class='dialog'><span class='italics'>(And with your spirit.) </span> </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Τὰς κεφαλὰς ὑμῶν τῷ Κυρίῳ κλίνομεν. </p></td>
+	<td class='RightCell'><p class='dialog'>Let us bow our heads to the Lord. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'><span class='italics'>(Σοί, Κύριε.) </span> </p></td>
+	<td class='RightCell'><p class='dialog'><span class='italics'>(To You, O Lord.) </span> </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='designation'> </p></td>
+	<td class='RightCell'><p class='designation'>BLESSING OF THE BRIDE AND GROOM </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='actor'>Ιερευς </p></td>
+	<td class='RightCell'><p class='actor'>Priest </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Ὁ Πατήρ, ὁ Υἱὸς καὶ τὸ Ἅγιον Πνεῦμα, ἡ παναγία καὶ ὁμοούσιος καὶ ζωαρχικὴ Τριάς, ἡ μία Θεότης καὶ Βασιλεία, εὐλογήσαι ὑμᾶς, καὶ παράσχοι ὑμῖν μακροζωΐαν, εὐτεκνίαν, προκοπὴν βίου καὶ πίστεως, καὶ ἐμπλήσαι ὑμᾶς πάντων τῶν ἐπὶ γῆς ἀγαθῶν, ἀξιώσαι δὲ ὑμᾶς καὶ τῶν ἐπηγγελμένων ἀγαθῶν τῆς ἀπολαύσεως, πρεσβείαις τῆς ἁγίας Θεοτόκου, καὶ πάντων τῶν Ἁγίων. </p></td>
+	<td class='RightCell'><p class='dialog'>May the Father, the Son and the Holy Spirit, the all-holy and consubstantial and life-giving Trinity, the One Godhead and Kingdom, bless you and grant to you long life, beautiful children progress in life and growth in faith; enrich you with all the good things of the earth, and make you worthy to enjoy the blessings promised to us; through the intercessions of the holy Theotokos and of all the saints. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'><span class='italics'>(Ἀμήν.) </span> </p></td>
+	<td class='RightCell'><p class='dialog'><span class='italics'>(Amen.) </span> </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='designation'> </p></td>
+	<td class='RightCell'><p class='designation'>THE DISMISSAL </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='actor'>Ιερευς </p></td>
+	<td class='RightCell'><p class='actor'>Priest </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Δόξα σοι ὁ Θεὸς ἡμῶν, δόξα σοι. </p></td>
+	<td class='RightCell'><p class='dialog'>Glory to You, our God. Glory to You. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Ὁ διὰ τῆς ἐν Κανᾷ ἐπιδημίας τίμιον ἀναδείξας τὸν γάμον, Χριστὸς ὁ ἀληθινὸς Θεὸς ἡμῶν, ταῖς πρεσβείαις τῆς παναχράντου αὐτοῦ Μητρός, τῶν ἁγίων ἐνδόξων καὶ πανευφήμων Ἀποστόλων, τῶν ἁγίων θεοστέπτων βασιλέων καὶ ἰσαποστόλων Κωνσταντίνου καὶ Ἑλένης, τοῦ ἁγίου μεγαλομάρτυρος Προκοπίου, καὶ πάντων τῶν Ἁγίων, ἐλεήσαι καὶ σώσαι ἡμᾶς ὡς ἀγαθὸς καὶ φιλάνθρωπος καὶ ἐλεήμων Θεός. </p></td>
+	<td class='RightCell'><p class='dialog'>May Christ our true God, who by his coming to Cana rendered marriage honorable, through the intercessions of his all-pure Mother, of the Holy, glorious and all-praised Apostles, of the holy God­ crowned rulers, equal to the Apostles, Constantine and Helen, of the holy great martyr Procopius, and of all the saints, have mercy on us and save us, for he is a good God who loves mankind. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'>Δι' εὐχῶν τῶν ἁγίων πατέρων ἡμῶν, Κύριε Ἰησοῦ Χριστὲ ὁ Θεός, ἐλέησον καὶ σῶσον ἡμᾶς. </p></td>
+	<td class='RightCell'><p class='dialog'>Through the prayers of our holy fathers, Lord Jesus Christ, our God, have mercy on us and save us. </p></td>
+	</tr>
+	<tr>
+	<td class='leftCell'><p class='dialog'><span class='italics'>(Ἀμήν.) </span> </p></td>
+	<td class='RightCell'><p class='dialog'><span class='italics'>(Amen.) </span> </p></td>
+	</tr>
+   	</tbody>
+   </table>
+</body>
+</html>

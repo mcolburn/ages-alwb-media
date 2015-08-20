@@ -1,0 +1,1 @@
+This project contains pdf scores in Greek and English, Byzantine and Western, that are available to the public
